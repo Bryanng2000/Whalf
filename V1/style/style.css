@@ -32,6 +32,14 @@
 
   }
 
+.display {
+  height: 200px;
+  width: 800px;
+  max-width: 80%;
+  background-color: #2F4F4F;
+  padding: 25px;
+  align-items: center;
+}
 .container {
   width: 800px;
   max-width: 80%;

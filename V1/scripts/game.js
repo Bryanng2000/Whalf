@@ -37,6 +37,7 @@ function selectOption(option){
   const nextTextNodeId = option.nextText
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
+  playSound()
 }
 
 /*
