@@ -55,79 +55,38 @@ const textNodes = [
     options: [
       {
         text: 'Start',
-        setState: {start: true},
+        setState: { item: true},
+        nextText: 2
+      },
+      {
+        text:'Settings',
         nextText: 2
       }
     ]
   },
-
-
   {
     id: 2,
-    text: 'There\'s an apple on the floor',
+    text: 'first scene',
     options: [
       {
-        text: 'You eat it',
-        requiredState: (currentState) => currentState.start,
-        setState: {start: false},
+        text: 'option1',
+        requiredState: (currentState) => currentState.item,
+        setState: {item: false, item2: true},
         nextText: 3
       },
       {
-        text: 'You throw it',
+        text: 'option2',
+        requiredState: (currentState) => currentState.item,
+        setState: {item: false, item3: true},
         nextText: 3
       },
       {
-        text: 'Shove it up your ass',
-        setState: {ecstasy: true},
+        text: 'option3',
         nextText: 3
       },
+
     ]
-  },
-
-
-    {
-        id: 3,
-        text: 'You feel something...',
-        options: [
-          {
-            text: 'It\'s because Junmin licked the apple',
-            setState: {immoral: true},
-            nextText: 4
-          },
-          {
-            text: 'You want to shove more up your ass',
-            requiredState: (currentState) => currentState.ecstasy,
-            nextText: 4
-          },
-          {
-            text: 'Just ignore it',
-            nextText: 4
-          },
-        ]
-    },
-
-    {
-        id: 4,
-        text: 'Your stomache growls',
-        options: [
-          {
-            text: 'You run to toilet',
-            requiredState: (currentState) => currentState.immoral,
-            nextText: 5
-          },
-          {
-            text: 'You start mast*rbating',
-            requiredState: (currentState) => currentState.ecstasy,
-            setState: {dopamine:true},
-            nextText: 5
-          },
-          {
-            text: 'Fuck it, keep ignoring',
-            nextText: 5
-          },
-        ]
-    },
-
+  }
 ]
 
 startGame()

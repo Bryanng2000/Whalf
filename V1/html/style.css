@@ -8,7 +8,7 @@
   font-family: pixel;
 }
 
-/* body {
+body {
   padding: 0;
   margin: 0;
   display: flex;
@@ -18,19 +18,7 @@
   height: 100vh;
   background-color: #333;
 
-} */
-
-.main {
-    padding-left: 175px;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-    background-color: #333;
-
-  }
+}
 
 .container {
   width: 800px;
@@ -65,10 +53,10 @@
   background-color: white;
   color: black;
 
-  transition: all 0.35s ease-in-out;
--webkit-transition: all 0.35s ease-in-out;
--moz-transition: all 0.35s ease-in-out;
--o-transition: all 0.35s ease-in-out;
+  transition: all 0.40s ease-in-out;
+-webkit-transition: all 0.40s ease-in-out;
+-moz-transition: all 0.40s ease-in-out;
+-o-transition: all 0.40s ease-in-out;
 
 }
 
