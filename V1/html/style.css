@@ -1,0 +1,56 @@
+*, *::before, *::after {
+  box-sizing:  border-box;
+  font-family: pixel;
+}
+
+@font-face {
+  src: url(fonts/retro_gaming.ttf);
+  font-family: pixel;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-color: #333;
+
+}
+
+.container {
+  width: 800px;
+  max-width: 80%;
+  background-color: grey;
+  padding: 10px;
+
+}
+
+.btn-grid {
+  display: grid;
+  grid-template-columns: auto;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.btn {
+  background-color: grey;
+  border: 0px solid;
+  padding: 5px 10px;
+  color: white;
+  outline: none;
+
+}
+
+.btn:hover {
+  background-color: white;
+  color: black;
+
+  transition: all 0.35s ease-in-out;
+-webkit-transition: all 0.35s ease-in-out;
+-moz-transition: all 0.35s ease-in-out;
+-o-transition: all 0.35s ease-in-out;
+
+}
