@@ -8,6 +8,7 @@ function startGame() {
   showTextNode(1)
 }
 
+//function to add options manually
 function showTextNode(textNodeIndex) {
   const textNode = textNodes.find(textNode => textNode.id === textNodeIndex)
   textElement.innerText = textNode.text
@@ -26,16 +27,27 @@ function showTextNode(textNodeIndex) {
   })
 }
 
+//function to show options users have
 function showOption(option) {
   return option.requiredState == null || option.requiredState(state)
 }
 
+//selection
 function selectOption(option){
   const nextTextNodeId = option.nextText
   state = Object.assign(state, option.setState)
   showTextNode(nextTextNodeId)
 }
 
+/*
+ACTUAL GAME
+
+id = path
+text = the question/scenario
+options = the answers for user
+state = data
+
+*/
 const textNodes = [
   {
     id: 1,
